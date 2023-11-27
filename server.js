@@ -12,7 +12,7 @@ dotenv.config({
 const bootcampsRoutes = require("./routes/bootcampsRoutes");
 const coursesRoutes = require("./routes/coursesRoutes");
 const reviewRoutes = require("./routes/reviewsRoutes");
-const usersRoutes = require("./routes/usersRoutes");
+const usersRoutes = require("./routes/userRoutes");
 
 conectarDB()
 
