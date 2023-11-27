@@ -1,0 +1,363 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687365",
+    "dateExported": "2023-11-19T20:31:47.773Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "bootcamps",
+            "containerId": "",
+            "created": "2023-11-19T17:34:40.132Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "courses",
+            "containerId": "",
+            "created": "2023-11-19T17:34:40.133Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "reviews",
+            "containerId": "",
+            "created": "2023-11-19T17:34:40.134Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-11-19T17:34:40.135Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3777d296-ce98-478b-8f06-fbb64f28d023",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "consultar todos los bootcamps",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-19T17:34:40.133Z",
+            "modified": "2023-11-19T17:34:40.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5d95e293-a437-4f4d-9cd6-322a9ef8d07d",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "crear bootcamps",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-11-19T17:34:40.135Z",
+            "modified": "2023-11-19T18:50:57.681Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"python Bootcamps \",\n  \"phone\": 5941301,\n  \"address\":\"Sena calle 57\",\n  \"topics\": [\n    \"BackEnd\"\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89a7f0ba-fd39-4078-af68-c5bda68b286e",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "consultar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/6553d402f6e9b2cee8b18b31",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-19T17:34:40.134Z",
+            "modified": "2023-11-19T17:34:40.134Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "284fb1ee-39a0-4f75-9b87-c203e69645b2",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "actualizar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/65",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2023-11-19T17:34:40.136Z",
+            "modified": "2023-11-19T17:34:40.136Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"name\": \"Scrum bootcamp\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ef8725d-a85e-4240-b8c0-9371f1d16a3c",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "30c3cd5d-6f3a-45d3-848b-45e198f5b489",
+            "name": "Eliminar bootcamp por id Copy",
+            "url": "http://127.0.0.1:5000/bootcamps/1",
+            "method": "DELETE",
+            "sortNum": 27500,
+            "created": "2023-11-19T17:34:40.137Z",
+            "modified": "2023-11-19T17:34:40.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ed4971b0-7050-4da2-8fbf-8d0c79f4e00c",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "consultar todos los cursos",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T17:34:40.138Z",
+            "modified": "2023-11-19T17:34:40.138Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "86151919-45f6-41f7-99c0-8145baaf1414",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "crear todos courses ",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-19T17:34:40.139Z",
+            "modified": "2023-11-19T19:23:58.053Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Pythonnum12\",\r\n  \"description\": \"desarollo y tecnicas\",\r\n  \"weeks\": 6,\r\n  \"enroll_cost\": 99.99,\r\n  \"minimum_skill\": \"Intermediate\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7142bc2d-61d2-4548-b316-104a2e588c40",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "consultar courses por id ",
+            "url": "http://127.0.0.1:5000/courses/655a60803f3af755e7444ae3",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-19T17:34:40.140Z",
+            "modified": "2023-11-19T20:21:03.204Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "58578a98-7a29-4037-8385-b24a407b33d8",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "actualizar course por id ",
+            "url": "http://127.0.0.1:5000/courses/655a60ce3f3af755e7444ae7",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-19T17:34:40.141Z",
+            "modified": "2023-11-19T19:25:21.547Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"weeks\": 12\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "26fc6a63-619e-4262-9f7c-159d5ffa3591",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "d0e649c0-4578-4b91-b520-2a360c46ec89",
+            "name": "Eliminar  courses por id ",
+            "url": "http://127.0.0.1:5000/courses/655a60ce3f3af755e7444ae7",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-11-19T17:34:40.142Z",
+            "modified": "2023-11-19T19:26:18.648Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "310700c9-14d7-4ac4-a009-35928dbd9b0a",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "consultar todos los reviews",
+            "url": "http://127.0.0.1:5000/reviews",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-11-19T17:34:40.143Z",
+            "modified": "2023-11-19T20:23:06.516Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"HOLA\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b8a8169-0729-457e-8a4e-169ae8963f59",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "crear todos los reviews",
+            "url": "http://127.0.0.1:5000/reviews",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-11-19T17:34:40.144Z",
+            "modified": "2023-11-19T20:21:36.375Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"title\": \"Review\",\r\n    \"text\": \"prueba\",\r\n    \"rating\": 9\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9041963-4646-4b79-88e1-63afecafe373",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "consultar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a6f5c7e137cc3e3988ec7",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-11-19T17:34:40.145Z",
+            "modified": "2023-11-19T20:30:30.398Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "854c6d3a-4d21-4d07-9279-5212b3cbbcd7",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "actualizar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a6f617e137cc3e3988ec6",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-11-19T17:34:40.146Z",
+            "modified": "2023-11-19T20:27:50.939Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"review1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a8c470b9-306b-47d6-9010-faadfa806667",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "e4aefad1-dbab-4ee6-a0eb-fd0d5a602196",
+            "name": "Eliminar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a6f617e137cc3e3988ec6",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-11-19T17:34:40.147Z",
+            "modified": "2023-11-19T20:28:16.446Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ef699a12-24ce-4a3b-8641-af046654677a",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "Consultar todos los users",
+            "url": "http://127.0.0.1:5000/users",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-11-19T17:34:40.148Z",
+            "modified": "2023-11-19T17:34:40.148Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c5593780-ae37-4ddd-bfdc-89072b7706ee",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "Crear todos los users",
+            "url": "http://127.0.0.1:5000/users",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-11-19T17:34:40.149Z",
+            "modified": "2023-11-19T17:34:40.149Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "181f3bf9-1c8e-4df9-959a-078f7cb08bcf",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "Consultar users por id",
+            "url": "http://127.0.0.1:5000/users/2",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-11-19T17:34:40.151Z",
+            "modified": "2023-11-19T17:34:40.151Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aedb2952-f6f5-4f87-99fa-436fe6c841d6",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "Actualizar users por id",
+            "url": "http://127.0.0.1:5000/users/1",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-11-19T17:34:40.152Z",
+            "modified": "2023-11-19T17:34:40.152Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5b18c0ad-fe91-4e62-9216-177a5e575914",
+            "colId": "643f5c4d-66d4-476d-9d37-98ed379b2f59",
+            "containerId": "ff7bd1a2-8eed-416d-921f-8057de85597d",
+            "name": "Eliminar users por id",
+            "url": "http://127.0.0.1:5000/users/2",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-11-19T17:34:40.153Z",
+            "modified": "2023-11-19T17:34:40.153Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
